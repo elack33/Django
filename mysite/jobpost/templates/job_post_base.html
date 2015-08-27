@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    {% load staticfiles %}
+    <link href="{% static "jobpost.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>{% block header %}{% endblock %}</h1>
+
+
+<div class="bigbox">
+    <div class="wrapper">
+
+        {% block content %}{% endblock %}
+
+    </div>
+</div>
+<p>
+    &nbsp
+</p>
+<div class="links">
+    {% block stuff %}
+        <table>
+            <tr>
+                <td>
+                <a href="/jobpost/view_jobs">View jobs</a>
+                </td>
+                <td>
+                    <a href="/jobpost/job_post">Post a Job</a>
+                </td>
+                <td>
+                    <a href="/jobpost/delete">Delete jobs</a>
+                </td>
+                <td>
+                    {% if user.is_authenticated %}
+                        <a href="/jobpost/logout"><button type="submit">LOGOUT</button></a>
+                        <a href="{% url 'password_change' %}"><button type="submit">Change password</button></a>
+                    {% else %}
+                        <a href="../../accounts/login"><button type="submit">LOGIN</button></a>
+                    {% endif %}
+
+                </td>
+        </table>
+    {% endblock %}
+</div>
+
+
+</body>
+</html>

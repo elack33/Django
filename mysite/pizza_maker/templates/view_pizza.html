@@ -1,0 +1,35 @@
+{% extends 'pizza_base.html' %}
+
+{% block title %}List o Piizzaaas{% endblock %}
+
+{% block header %}
+{{ button_name }}Pizza Maker!
+{% endblock %}
+
+{% block content %}
+    {% for pizza in pizzas %}
+            <div class="pizza">
+                <br>
+                <p>
+                    Pizza Name: {{ pizza.title }}
+                </p>
+                <p>
+                    Pizza topping: {{ pizza.get_toppings_display }}
+                </p>
+                <p>
+                    Pizza extra sauce: {{ pizza.extra_sauce|yesno:"Hell yas! Bring it on!, No... nonono dis no"}}
+                </p>
+                <p>
+                    Pizza size: {{ pizza.pizza_size }}
+                </p>
+                <br>
+            </div>
+        {% endfor %}
+    <div>
+        <p>
+           <a href="/pizza_maker/pizza"> Make pizza!</a>
+        </p>
+    </div>
+
+
+{% endblock %}

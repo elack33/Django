@@ -1,0 +1,14 @@
+{% extends 'job_post_base.html' %}
+
+{% block header %}Post a job{% endblock %}
+
+{% block content %}
+<div class="center">
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Delete">
+    </form>
+</div>
+{% endblock %}
+

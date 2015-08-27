@@ -1,0 +1,38 @@
+{% extends 'job_post_base.html' %}
+
+{% block header %}Post a job{% endblock %}
+
+{% block content %}
+<div class="center">
+    {% csrf_token %}
+
+    {% for job in jobs %}
+        <div class="title">
+            {{ job.title }}
+        </div>
+
+        <div class="description">
+            <p>{{ job.job_description }}</p>
+        </div>
+
+        <div class="date">
+            {{ job.post_date}}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block stuff %}
+    <table>
+        <tr>
+            <td>
+            <a href="/jobpost/view_jobs">View jobs</a>
+            </td>
+            <td>
+                <a href="/jobpost/job_post">Post a Job</a>
+            </td>
+            <td>
+                <a href="/jobpost/delete">Delete jobs</a>
+            </td>
+    </table>
+{% endblock %}

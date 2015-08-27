@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../../mysite/static/style_old.css"</head>
+
+<style>
+    .row1 {
+    background-color: burlywood;
+}
+
+.row2 {
+    background-color: lightsteelblue;
+ }
+
+body {
+    background-color: #0099CC;
+}
+</style>
+
+
+<body>
+
+    <div class="outer">
+
+        <h1>
+            {% block header %}{% endblock %}
+        </h1>
+
+        {% block content %}{% endblock %}
+
+    </div>
+
+</body>
+</html>

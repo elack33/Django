@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add user</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <!--<form method="post" class="form1">-->
+        <!--{% csrf_token %}-->
+        <!--{{ form }}-->
+        <!--<input type="submit">-->
+    <!--</form>-->
+
+    <form action="" method="post">
+        <ul class="user_add">
+            <li id="first_name" class="inputbox">
+                <table>
+                    <tr>
+                        <td style="width: 125px">
+                            First name:
+                        </td>
+                        <td>
+                            {{ form.first_name }}
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li id="last_name" class="inputbox">
+                <table>
+                    <tr>
+                        <td style="width: 125px">
+                            Last name:
+                        </td>
+                        <td>
+                            {{ form.last_name }}
+                        </td>
+                    </tr>
+                </table>
+
+            </li>
+            <li id="email" class="inputbox">
+                <table>
+                    <tr>
+                        <td style="width: 125px">
+                            Email:
+                        </td>
+                        <td>
+                            {{ form.email }}
+                        </td>
+                    </tr>
+                </table>
+             </li>
+            <li id="username" class="inputbox">
+                <table>
+                    <tr>
+                        <td style="width: 125px">
+                            Username:
+                        </td>
+                        <td>
+                            {{ form.username}}
+                        </td>
+                    </tr>
+                </table>
+            </li>
+
+            {% csrf_token %}
+        <input type="submit" value="Submit" class="btn-style">
+        </ul>
+    </form>
+
+</body>
+</html>

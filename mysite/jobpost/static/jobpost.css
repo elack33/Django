@@ -1,0 +1,60 @@
+body {
+    background-color: #46b8da;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+table, td, tr {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    background-color: lightgreen;
+    border: 2px;
+    color: white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bigbox {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+}
+
+.title {
+    border-style: groove;
+    background-color: #888888;
+    color: white;
+    font-size: larger;
+
+}
+
+/*.links {*/
+    /*border-style: double;*/
+    /*border-bottom-width: thick;*/
+/*}*/
+
+.description {
+    border-style: ridge;
+    background-color: mediumpurple;
+    padding: 10px;
+
+}
+
+.date {
+
+
+}

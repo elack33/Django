@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <p>
+        <a href="{% url 'home_page' %}">Back home!</a>
+    </p>
+
+    {% for clues in devil_puzzle_clues %}
+        <div class="inner">
+            <p class="clue">
+                clue = {{ clues.text }}
+
+            </p>
+        </div>
+
+    {% endfor %}
+    <p>
+        <a href="{% url 'home_page' %}">Back home!</a>
+    </p>
+
+</body>
+</html>

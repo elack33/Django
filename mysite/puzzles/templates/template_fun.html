@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %} YO! {% endblock %}
+
+{% block header %} This template is <em>fun</em> {% endblock %}
+
+{% block content %}
+
+    <p>{{ clue }}</p>
+    <p>{{ clue.text }}</p>
+    <p>{{ clue.fun }} </p>
+    <p>{{ clue.double_the_number}}</p>
+    <p>{{ list_var }}</p>
+    <p>{{ list_var.4 }}</p>
+    <p>{{dict_var}}</p>
+    <p>{{dict_var.keys}}</p>
+    <p>{{dict_var.values}}</p>
+    <!--<p>{{dict_var.one}}</p>-->
+    {# comment #}
+    {% comment %}
+this is a commentted area.
+    {% endcomment %}
+
+
+    {{clue.text|upper}}
+
+    <p>
+        {{ list_var|first|add:"2"}}
+    </p>
+    <p>{{ list_var|default:"something" }}</p>
+    <p>{{ list_var|unordered_list }}</p>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

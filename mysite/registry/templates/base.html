@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="../static/style_not.css">
+</head>
+<body>
+
+<h1>{% block header %}{% endblock %}</h1>
+
+ARGH!
+
+<div class="outer">
+
+    {% block content %}{% endblock %}
+
+</div>
+
+</body>
+</html>

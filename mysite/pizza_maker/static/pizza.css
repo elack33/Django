@@ -1,0 +1,21 @@
+body {
+    background-image: url("http://thumbs.dreamstime.com/z/pizza-ingredients-19788664.jpg");
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.outer {
+    background-color: lightcoral;
+    color: blue;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pizza {
+    border-style: ridge;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

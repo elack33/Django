@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <p>
+        <a href="{% url 'home_page' %}">Back home!</a>
+    </p>
+
+    {% for puzzle in puzzles_not_10x10 %}
+        <div class="inner">
+            <p class="clue">
+                puzzle name =  {{ puzzle.name }}
+
+            </p>
+        </div>
+
+    {% endfor %}
+    <p>
+        <a href="{% url 'home_page' %}">Back home!</a>
+    </p>
+
+</body>
+</html>

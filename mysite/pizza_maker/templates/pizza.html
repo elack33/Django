@@ -1,0 +1,15 @@
+{% extends 'pizza_base.html' %}
+
+{% block title %}Make da PIIIZZZAAAAA{% endblock %}
+
+{% block header %}
+{{ button_name }}Pizza Maker!
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{{ button_name }}" />
+    </form>
+{% endblock %}

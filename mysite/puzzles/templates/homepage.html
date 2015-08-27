@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+    <div>
+        <p>This is the home page o puzzles.</p>
+        <p>Here are some things:</p>
+        <p><a href="{% url 'total_clues' %}">Total clues in the database!</a></p>
+        <p><a href="{% url 'puzzles_lt_10_clues' %}">Clues from puzzles with 10 or fewer clues!</a></p>
+        <p><a href="{% url 'devlish_puzzles' %}">Clues from puzzles with a difficulty rating of DEVILISH!</a></p>
+        <p><a href="{% url 'puzzles_not_10_x_10' %}">Puzzles that are not 10 x 10.</a></p>
+        <p><a href="{% url 'puzzles_that_use_a_clue' %}">Puzzles that all contain the same clue.</a></p>
+        <p><a href="{% url 'puzzles_lt_10_clues_same_template' %}">
+            Clues from puzzles with 10 or fewer clues! Same Template</a></p>
+        <p><a href="{% url 'devlish_puzzles_same_template' %}">
+            Clues from puzzles with a difficulty rating of DEVILISH! Same Template</a></p>
+        <p><a href="{% url 'puzzles_not_10_x_10_same_template' %}">
+            Puzzles that are not 10 x 10. Same Template</a></p>
+        <p><a href="{% url 'puzzles_that_use_a_clue_same_template' %}">
+            Puzzles that all contain the same clue. Same Template</a></p>
+    </div>
+
+</body>
+</html>
