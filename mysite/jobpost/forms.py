@@ -76,3 +76,5 @@ class CreateUserForm(forms.ModelForm):
         new_user.save()
         return new_user
 
+
+
