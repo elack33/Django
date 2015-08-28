@@ -1,0 +1,14 @@
+{% extends 'job_post_base.html' %}
+
+{% block header %}Job Info{% endblock %}
+
+{% block content %}
+<div class="center">
+    <p>
+        Title: {{ job.title }}
+    </p>
+    <p>
+        Description: {{ job.job_description }}
+    </p>
+</div>
+{% endblock %}

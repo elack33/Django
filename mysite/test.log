@@ -1,0 +1,33 @@
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.002) SHOW FULL TABLES; args=None
+(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.004) SHOW FULL TABLES; args=None
+(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+(0.000) SELECT `jobpost_jobpost`.`id`, `jobpost_jobpost`.`poster_id`, `jobpost_jobpost`.`title`, `jobpost_jobpost`.`job_description`, `jobpost_jobpost`.`post_date` FROM `jobpost_jobpost` WHERE `jobpost_jobpost`.`id` = 13; args=(13,)
+(0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uif55v4sxr58g71pd4w7416n2up07ijk' AND `django_session`.`expire_date` > '2015-08-28 02:06:23.666199'); args=('uif55v4sxr58g71pd4w7416n2up07ijk', u'2015-08-28 02:06:23.666199')
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 2; args=(2,)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+Not Found: /favicon.ico
+hello world!
+This is the INFO LEVEL! :D WOOO!
+Not Found: /favicon.ico
+Dar is super awesome, and has a new #DREAMJOB!!!!
+Dar is super awesome, and has a new #DREAMJOB!!!!
+Dar is super awesome, and has a new #DREAMJOB!!!!

@@ -36,7 +36,7 @@ urlpatterns = [
     url(r'^pizza_maker/', include('pizza_maker.urls')),
     # url(r'^myaccounts/', include([
         # url(r'^(?P<user_id>\d+)/change_password/$', myaccounts_views.change_password, name='change_password')
-        url(r'^create_user/$', myaccounts_views.create_user, name='create_user'),
+        # url(r'^create_user/$', myaccounts_views.create_user, name='create_user'),
 ]
 # no dollar sign at the end, so make sure names are unique, accounts and accountsforyou are the same
 

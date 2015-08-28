@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^thanks/$', views.thanks, name='thanks'),
     url(r'^delete/$', views.delete, name='delete'),
     url(r'^logout/$', views.logout_view, name='logout'),
+    url(r'^(?P<job_id>[0-9]+)/$', views.job_detail, name='job_info'),
 
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

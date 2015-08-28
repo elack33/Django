@@ -1,0 +1,1 @@
+(0.000) SELECT `jobpost_jobpost`.`id`, `jobpost_jobpost`.`poster_id`, `jobpost_jobpost`.`title`, `jobpost_jobpost`.`job_description`, `jobpost_jobpost`.`post_date` FROM `jobpost_jobpost` WHERE `jobpost_jobpost`.`id` = 13; args=(13,)

@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class JobPost(models.Model):
@@ -10,6 +13,10 @@ class JobPost(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    def is_dar_awesome(self):
+        logger.info('Dar is super awesome, and has a new #DREAMJOB!!!!')
+
 
 class Roles(models.Model):
     ROLES_CHOICES = (
@@ -29,3 +36,4 @@ class Roles(models.Model):
         return 'Roles: {}'.format(
             self.roles,
         )
+

@@ -123,3 +123,48 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
 
 LOGIN_REDIRECT_URL = '/jobpost/job_post'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'test.log'),
+        },
+        'rotate_file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'rotate.log'),
+            'maxBytes': 50,
+            'backupCount': 4,
+        },
+        'stream': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+        }
+
+
+
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'jobpost': {
+            'handlers': ['file', 'stream'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.db.backends': {
+            'handlers': ['rotate_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        }
+
+    },
+
+}
