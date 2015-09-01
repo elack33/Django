@@ -1,1 +1,1 @@
-(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+CREATE TABLE `shirtstore_store_available_shirts` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `store_id` integer NOT NULL, `shirt_id` integer NOT NULL, UNIQUE (`store_id`, `shirt_id`)); (params None)
